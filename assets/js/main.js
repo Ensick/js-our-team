@@ -53,13 +53,16 @@ const team = [
 
     document.getElementById('contDivJs').innerHTML += 
     `
-    <div class="card" style="width: 18rem;">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="card">
         <img src="./assets/img/${oggettiTeam.image}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${oggettiTeam.name}</h5>
             <p class="card-text">${oggettiTeam.role}</p>
         </div>
+      </div>
     </div>
+    
     
     `
 
