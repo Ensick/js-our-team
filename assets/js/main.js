@@ -45,3 +45,23 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+  let percorsoImg = '../img/'
+
+  for(let i = 0; i < team.length; i++){
+
+    let oggettiTeam = team[i]
+
+    document.getElementById('contDivJs').innerHTML += 
+    `
+    <div class="card" style="width: 18rem;">
+        <img src=${percorsoImg + oggettiTeam.image} class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${oggettiTeam.name}</h5>
+            <p class="card-text">${oggettiTeam.role}</p>
+        </div>
+    </div>
+    
+    `
+
+  }
